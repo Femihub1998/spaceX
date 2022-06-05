@@ -6,8 +6,25 @@
         body {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
+        @media only screen and (max-width: 688px) {
+  body {
+      margin: 0;
+      padding: 0;
+    background-color: red;
+  }
+}
+
+@media only screen and (max-width: 688px) {
+  .hero {
+    width: 688px;
+     margin: 0; 
+     padding: 0;
+     background-color: yellow;
+  }
+}
 
         .hero {
             background-image: url(images/space1.jpg);
@@ -137,7 +154,7 @@
         }
 
         .crew-text .crew-inner {
-            width: 30%;
+            width: 40%;
         }
 
         .starlink-text {
@@ -146,7 +163,7 @@
         }
 
         .starlink-text .starlink-inner {
-            width: 30%;
+            width: 40%;
         }
 
         .starship-text {
@@ -155,7 +172,7 @@
         }
 
         .starship-text .starship-inner {
-            width: 30%;
+            width: 40%;
         }
 
 
@@ -165,7 +182,16 @@
         }
 
         .land-text .land-inner {
-            width: 30%;
+            width: 40%;
+        }
+
+        footer {
+            background-color: black;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
         }
     </style>
     <meta charset="UTF-8">
@@ -234,7 +260,7 @@
                             <h2 style="margin: 0; color: white;">COMPLETED MISSION</h2>
                         </div>
                         <div>
-                            <h1 style="font-size: 2.5em; margin: 0; color: white;">Crew-3 Returns to Earth
+                            <h1 style=" text-transform: uppercase; font-size: 2.5em; margin: 0; color: white;">Crew-3 Returns to Earth
                             </h1>
                         </div>
                         <div style="margin-top: 30px ;">
@@ -251,7 +277,7 @@
                     </svg>
                 </div>
             </div>
-           
+
         </div>
         <!-- crew-3 end -->
 
@@ -264,7 +290,7 @@
                             <h2 style="margin: 0; color: white;">RECENT LAUNCH</h2>
                         </div>
                         <div>
-                            <h1 style="font-size: 2.5em; margin: 0; color: white;">Starlink Mission</h1>
+                            <h1 style=" text-transform: uppercase; font-size: 2.5em; margin: 0; color: white;">Starlink Mission</h1>
                         </div>
                         <div style="margin-top: 30px ;">
                             <button
@@ -282,7 +308,7 @@
                 <div class="starship-text">
                     <div class="starship-inner" style=" padding-top: 23em;">
                         <div>
-                            <h1 style="font-size: 2.5em; margin: 0; color: white;">Starship Update</h1>
+                            <h1 style=" text-transform: uppercase; font-size: 2.5em; margin: 0; color: white;">Starship Update</h1>
                         </div>
                         <div style="margin-top: 30px ;">
                             <button
@@ -300,7 +326,7 @@
                 <div class="land-text">
                     <div class="land-inner" style=" padding-top: 23em;">
                         <div>
-                            <h1 style="font-size: 2.5em; margin: 0; color: white;">Starship to Land NASA Astronauts on
+                            <h1 style=" text-transform: uppercase; font-size: 2.5em; margin: 0; color: white;">Starship to Land NASA Astronauts on
                                 the Moon</h1>
                         </div>
                         <div style="margin-top: 30px ;">
@@ -312,6 +338,26 @@
             </div>
         </div>
         <!-- land end -->
+
+        <!-- footer start -->
+        <footer>
+            <div class="footer" style="display: flex; width: 65%; margin: auto; padding: 20px; justify-content: space-between;">
+                <div style="width: 15%; margin: auto;">
+                    <h5 style="color: gray;">SPACEX &copy 2022</h5>
+                </div>
+                <div class="footer-link" style=" width: 85%; margin: auto; ">
+                    <ul style="margin: 0  0 ; padding: 0; width: 100%; list-style: none; display: flex; justify-content: space-between;">
+                        <li><a href="#">TWITTER</a></li>
+                        <li><a href="#">YOUTUBE</a></li>
+                        <li><a href="#">INSTAGRAM</a></li>
+                        <li><a href="#">FLICKR</a></li>
+                        <li><a href="#">LINKEDIN</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="#">SUPPLIERS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>
